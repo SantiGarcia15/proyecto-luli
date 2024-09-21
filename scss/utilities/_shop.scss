@@ -1,0 +1,80 @@
+// Variables
+$primary-color: #f7f1f1;
+$secondary-color: #000000;
+$button-elegant-color: #070706; // Color elegante para los botones
+$button-elegant-hover: darken($button-elegant-color, 10%);
+$card-bg-color: #faf8f5; // Fondo elegante claro para las tarjetas
+$card-border-color: #e0e0e0; // Borde sutil
+
+// Estilos globales
+body { 
+  font-family: 'Roboto', sans-serif;
+  background-color: $primary-color;
+}
+
+// Título de la sección
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $secondary-color;
+  margin-bottom: 40px;
+}
+
+// Estilos para las tarjetas de productos
+.elegant-card {
+  background-color: $card-bg-color;
+  border: 1px solid $card-border-color;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  max-width: 350px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    border-radius: 15px 15px 0 0;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    h5 {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+
+    .btn-elegant {
+      background-color: $button-elegant-color;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+
+      &:hover {
+        background-color: $button-elegant-hover;
+      }
+    }
+  }
+}
+
+// Estilos para la sección de categorías
+button.btn-elegant {
+  background-color: $button-elegant-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $button-elegant-hover;
+  }
+}
+
+// Estilos de centrado
+.row {
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}

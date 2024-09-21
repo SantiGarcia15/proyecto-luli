@@ -1,0 +1,48 @@
+.about-us-section {
+  background-color: $primary-color; // Fondo de la sección
+  padding: 40px 0;
+
+  .container {
+    .row {
+      display: flex;
+      align-items: center;
+    }
+
+    .rounded-image {
+      border-radius: 15px; // Borde redondeado de la imagen
+      width: 100%;
+      max-height: 500px; // Limitar la altura máxima de la imagen
+      object-fit: cover; // Ajustar la imagen dentro de los límites
+    }
+
+    .about-us-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $secondary-color; // Color de título
+      margin-bottom: 20px;
+    }
+
+    .about-us-text {
+      font-size: 1.1rem;
+      color: darken($secondary-color, 20%); // Color de texto
+      line-height: 1.6;
+    }
+  }
+}
+
+// Responsividad
+@media (max-width: 767px) {
+  .about-us-section {
+    .container {
+      .row {
+        flex-direction: column; // Cambiar la disposición a columna en pantallas pequeñas
+        text-align: center; // Centramos el texto
+      }
+
+      .rounded-image {
+        margin-bottom: 10px; // Espacio entre imagen y texto
+        max-height: 300px; // Ajustar el tamaño de la imagen en móviles
+      }
+    }
+  }
+}

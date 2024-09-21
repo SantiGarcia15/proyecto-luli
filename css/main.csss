@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .top-header {
+  background-color: #000000;
+  padding: 20px 0;
+}
+header .top-header .container {
+  display: flex;
+  align-items: center;
+}
+header .top-header .container .logo {
+  width: 60px;
+  height: auto;
+}
+header .top-header .container .company-name-image {
+  width: 150px;
+  height: auto;
+  margin-top: 5px;
+}
+header .navbar {
+  background-color: #000000;
+}
+header .navbar .navbar-nav .nav-link {
+  color: #f7f1f1;
+  font-weight: 500;
+  margin: 0 10px;
+}
+header .navbar .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.main-l {
+  flex: 1;
+  padding: 20px;
+}
+.main-l .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.main-l .carousel .carousel-control-prev, .main-l .carousel .carousel-control-next {
+  filter: invert(1);
+}
+.main-l .row {
+  margin-top: 30px;
+}
+.main-l .row .col-lg-6 {
+  margin-bottom: 20px;
+}
+.main-l .row .col-lg-6 .img-fluid {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #000000;
+  color: #f7f1f1;
+  padding: 20px 0;
+}
+footer h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+footer ul li a {
+  color: #f7f1f1;
+}
+footer ul li a:hover {
+  color: white;
+}
+footer ul li a img {
+  width: 24px;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.csss.map */
