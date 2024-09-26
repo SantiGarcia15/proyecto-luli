@@ -1,16 +1,26 @@
 // Variables
-$primary-color: #f7f1f1;
-$secondary-color: #000000;
-$input-background-color: #fff;
+$primary-color: rgba(248, 240, 240, 0.8); // Fondo casi blanco semitransparente
+$secondary-color: #000000; // Negro elegante para los textos
+$accent-color: #0f0e0f; // Rosa para un toque de diseño femenino
 $button-color: #007bff;
 $button-hover-color: darken($button-color, 10%);
 $form-border-color: lighten($secondary-color, 20%);
+$font-family: 'Helvetica Neue', sans-serif;
+
+// Estilos generales
+body {
+  font-family: $font-family;
+  background-color: #f3f3f3; // Fondo claro
+  color: $secondary-color;
+}
 
 // Estilos del formulario de contacto
 .contact-form {
-  background-color: $primary-color;
+  background-color: $primary-color; // Fondo semitransparente
   border: 1px solid $form-border-color;
   border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   .form-label {
     color: $secondary-color;
@@ -18,16 +28,22 @@ $form-border-color: lighten($secondary-color, 20%);
   }
 
   .form-control {
-    background-color: $input-background-color;
+    background-color: #fff;
     border: 1px solid $form-border-color;
     border-radius: 10px;
   }
 
   .btn-primary {
-    background-color: $button-color;
+    background-color: $accent-color; // Botón con color de acento
     border: none;
     &:hover {
-      background-color: $button-hover-color;
+      background-color: darken($accent-color, 10%);
     }
   }
+}
+
+h2 {
+  font-family: $font-family;
+  color: $secondary-color;
+  margin-bottom: 20px;
 }
