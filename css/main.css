@@ -139,6 +139,10 @@ header .top-header .container .company-name-image {
 header .navbar {
   background-color: #000000;
 }
+header .navbar .navbar-toggler {
+  background-color: black;
+  border: none;
+}
 header .navbar .navbar-nav .nav-link {
   color: rgba(248, 240, 240, 0.8);
   font-weight: 500;
@@ -146,6 +150,15 @@ header .navbar .navbar-nav .nav-link {
 }
 header .navbar .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, 0.8);
+}
+header .navbar .navbar-collapse {
+  justify-content: flex-start;
+  text-align: left;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding-left: 0;
+  display: block;
+  color: rgba(248, 240, 240, 0.8);
 }
 
 .main-l {

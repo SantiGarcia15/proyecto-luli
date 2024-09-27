@@ -52,6 +52,13 @@ header {
   .navbar {
     background-color: $secondary-color;
 
+    .navbar-toggler {
+      background-color: black;  // Color del botón hamburguesa
+      border: none;
+    }
+
+  
+
     .navbar-nav {
       .nav-link {
         color: $primary-color;
@@ -60,6 +67,22 @@ header {
 
         &:hover {
           color: lighten($primary-color, 10%);
+        }
+      }
+    }
+
+    // Ajuste para desplegar el menú hamburguesa a la izquierda
+    .navbar-collapse {
+      justify-content: flex-start;  // Alinea el contenido a la izquierda
+      text-align: left;
+
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            padding-left: 0; // Elimina el padding innecesario
+            display: block;
+            color: $primary-color;
+          }
         }
       }
     }
@@ -187,6 +210,7 @@ footer {
     width: 42%; /* Ajustar el ancho de las cards para que entren dos en una fila */
     height: auto; /* Ajustar la altura para mantener la relación de aspecto */
   }
+  
 }
 
 // Media queries para tablets
