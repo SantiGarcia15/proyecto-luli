@@ -47,35 +47,6 @@ body {
   margin-bottom: 40px;
 }
 
-.elegant-card {
-  background-color: #faf8f5;
-  border: 1px solid #e0e0e0;
-  border-radius: 15px;
-  transition: transform 0.3s ease-in-out;
-  max-width: 350px;
-}
-.elegant-card:hover {
-  transform: scale(1.05);
-}
-.elegant-card .card-img-top {
-  border-radius: 15px 15px 0 0;
-  height: 250px;
-  object-fit: cover;
-}
-.elegant-card .card-body h5 {
-  color: #000000;
-  font-weight: 600;
-}
-.elegant-card .card-body .btn-elegant {
-  background-color: #070706;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-}
-.elegant-card .card-body .btn-elegant:hover {
-  background-color: black;
-}
-
 button.btn-elegant {
   background-color: #070706;
   color: white;
